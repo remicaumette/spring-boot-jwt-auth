@@ -1,0 +1,33 @@
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "username": "remi",
+  "password": ""
+}
+
+###
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "username": "remi",
+  "password": ""
+}
+
+###
+
+GET http://localhost:8080/users
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/private
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZW1pIiwiaWF0IjoxNTk3OTUxMzYwLCJleHAiOjE1OTc5NTQ5NjB9.SHl-SWe7aa6gmQ3OD-st0QGu_7vW37-xgn6-zxzaPTO-ac5yimJDmoikr43DQM8OeAvAVUcp3RFsz_NVmYPGfg
+Content-Type: application/json
